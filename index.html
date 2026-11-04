@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PromptUplift – Free AI Prompt Optimizer</title>
+  <meta name="description" content="Improve your prompts with PromptUplift, a free AI prompt optimizer. Check 8 essentials, get a clarity score, and organize your prompt. No signup or uploads.">
+  <meta property="og:title" content="PromptUplift – Free AI Prompt Optimizer">
+  <meta property="og:description" content="Check 8 essentials, get a clarity score, and structure your prompt. 100% free, no signup, runs in your browser.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#tool" data-i18n="skip">Skip to tool</a>
+  <header class="site-header container">
+    <a class="brand" href="#" aria-label="PromptUplift home">PromptUplift<span class="brand-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#how-it-works" data-i18n="navHow">How it works</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+      <button id="language-toggle" class="language-button" type="button" lang="zh-CN" aria-label="切换到中文">中文</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro" aria-labelledby="main-title">
+      <p class="eyebrow" data-i18n="eyebrow">A LITTLE STRUCTURE. A CLEARER PROMPT.</p>
+      <h1 id="main-title" data-i18n="heading">Free AI Prompt Optimizer</h1>
+      <p class="intro-text" data-i18n="intro">Turn a rough idea into a clearer prompt. Check 8 essentials, see what’s missing, and give your next prompt a little uplift.</p>
+      <p class="privacy-line"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="privacy">100% free · No signup · Runs in your browser, nothing uploaded</span></p>
+    </section>
+
+    <section id="tool" class="tool" aria-label="Prompt optimizer tool" tabindex="-1">
+      <div class="workspace">
+        <section class="input-panel" aria-labelledby="input-title">
+          <div class="panel-heading"><p class="eyebrow" data-i18n="stepInput">01 / INPUT</p><h2 id="input-title" data-i18n="inputTitle">Your prompt</h2></div>
+          <form id="prompt-form" novalidate>
+            <label for="prompt" id="input-help" class="input-help" data-i18n="inputHelp">Paste an English or Chinese prompt to get started.</label>
+            <textarea id="prompt" name="prompt" rows="12" spellcheck="false" autocomplete="off" autocapitalize="off" aria-describedby="character-count notice" placeholder="What would you like an AI to do?&#10;&#10;For example: Write a blog post about time management for college students."></textarea>
+            <div class="input-meta"><span id="character-count">0 / 20,000 characters</span><button id="clear" class="text-button" type="button" data-i18n="clear">Clear</button></div>
+            <div class="input-actions"><button class="primary-button" type="submit"><span data-i18n="analyze">Analyze prompt</span><span aria-hidden="true">↗</span></button><button id="example" class="secondary-button" type="button" data-i18n="example">Try an example</button></div>
+            <p class="shortcut" data-i18n="shortcut">⌘ / Ctrl + Enter to analyze</p>
+            <p id="notice" class="notice" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+          <details class="rule-details"><summary data-i18n="rulesTitle">How are these checks decided?</summary><p data-i18n="rulesBody">Checks use English/Chinese keywords and simple patterns, so they may miss valid wording or count irrelevant mentions. Task, context, audience, role, and example need explicit wording to pass; weaker clues earn partial credit. Format needs both a format and a length; constraints need both a boundary and a tone. Specific wording passes when there are no listed vague phrases and at least 20 non-space characters; one vague phrase or shorter text earns partial, while two or more vague phrases earn zero. Recognized placeholders, such as [To fill: ...] or [your background here], and templates made only of square-bracketed hints do not earn points. Always review the suggestions yourself.</p></details>
+        </section>
+
+        <section class="results-panel" aria-labelledby="results-title">
+          <div class="panel-heading"><p class="eyebrow" data-i18n="stepResults">02 / ANALYSIS</p><h2 id="results-title" data-i18n="resultsTitle">Your prompt check</h2></div>
+          <div id="empty-state" class="empty-state"><span class="empty-mark" aria-hidden="true">– / 100</span><h3 data-i18n="emptyTitle">Clarity starts here.</h3><p data-i18n="emptyBody">Your score and 8 practical checks will appear here after you analyze a prompt.</p><span class="empty-note" data-i18n="emptyNote">No AI calls. Just transparent rules.</span></div>
+          <div id="score-panel" class="score-panel" hidden>
+            <div id="score-meter" class="score-meter" role="meter" aria-label="Structure score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="score-inner"><strong id="score">0</strong><span>/ 100</span></div></div>
+            <div class="score-copy"><p class="eyebrow" data-i18n="scoreLabel">Structure score</p><h3 id="score-summary"></h3><p data-i18n="scoreNote">A structure check, not a prediction of AI quality.</p><span id="raw-score" class="raw-score"></span></div>
+          </div>
+          <p class="checklist-label eyebrow" data-i18n="checklist">THE 8 ESSENTIALS</p>
+          <ul id="checks" class="checks" aria-label="Eight scoring checks"></ul>
+          <p class="score-math" data-i18n="math">Score = round(points earned ÷ 92 × 100). Pass earns full weight; partial earns half; missing earns zero.</p>
+          <button id="optimize" class="primary-button optimize-button" type="button" disabled><span data-i18n="optimize">Optimize in one click</span><span aria-hidden="true">→</span></button>
+          <p id="analyze-first" class="unlock-note" data-i18n="analyzeFirst">Analyze your prompt to unlock optimization.</p>
+        </section>
+      </div>
+
+      <section id="output-section" class="output-section" aria-labelledby="output-title" hidden>
+        <div class="output-heading"><div><p class="eyebrow" data-i18n="stepOutput">03 / OPTIMIZED</p><h2 id="output-title" tabindex="-1" data-i18n="optimizedTitle">Your structured prompt</h2></div><button id="copy" class="primary-button" type="button" data-i18n="copy">Copy prompt</button></div>
+        <p class="output-note" data-i18n="outputNote">Fill in the bracketed placeholders before using this prompt. This is a rule-based structure edit; your wording is preserved.</p>
+        <textarea id="optimized-prompt" class="optimized-prompt" rows="18" readonly spellcheck="false" aria-label="Optimized prompt"></textarea>
+        <div class="changes"><h3 data-i18n="changes">What changed</h3><ul id="changes"></ul></div>
+      </section>
+    </section>
+
+    <section id="how-it-works" class="how-section" aria-labelledby="how-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="howEyebrow">FROM ROUGH TO READY</p><h2 id="how-title" data-i18n="howTitle">Better prompts, in three steps.</h2></div>
+      <ol class="steps"><li><span class="step-number" aria-hidden="true">01</span><div><h3 data-i18n="how1Title">Bring your idea.</h3><p data-i18n="how1Body">Paste a prompt in English or Chinese. A sentence, a draft, or something you already use.</p></div></li><li><span class="step-number" aria-hidden="true">02</span><div><h3 data-i18n="how2Title">Find the gaps.</h3><p data-i18n="how2Body">Check 8 essentials, from a clear task to a useful example. Each check includes English and Chinese advice.</p></div></li><li><span class="step-number" aria-hidden="true">03</span><div><h3 data-i18n="how3Title">Give it structure.</h3><p data-i18n="how3Body">Reorganize it into four sections, fill in the missing details, and copy it into your preferred AI tool.</p></div></li></ol>
+    </section>
+
+    <section id="faq" class="faq-section" aria-labelledby="faq-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="faqEyebrow">A FEW GOOD QUESTIONS</p><h2 id="faq-title" data-i18n="faqTitle">Good to know.</h2></div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq1q">What does this AI prompt optimizer actually do?</summary><p data-i18n="faq1a">PromptUplift checks the structure of your prompt with local JavaScript rules. It looks for a task, context, format and length, audience, constraints and tone, a role, an example, and specific wording. It then organizes the original text into Task, Context, Format, and Constraints, with placeholders for missing details. It does not use a generative AI model.</p></details>
+        <details><summary data-i18n="faq2q">Is it free? Do I need an account?</summary><p data-i18n="faq2a">Yes, the tool is completely free. There is no account, subscription, API key, or usage quota. You can also use the downloaded files offline.</p></details>
+        <details><summary data-i18n="faq3q">Is my prompt uploaded or saved?</summary><p data-i18n="faq3a">The tool never uploads or saves your prompt. Analysis and restructuring happen in your browser’s memory. There are no analytics, external fonts, or third-party scripts. Refreshing the page resets the tool; your browser may independently restore form contents. When hosted, the hosting provider handles ordinary page requests, but the tool does not send it your prompt.</p></details>
+        <details><summary data-i18n="faq4q">How is the score out of 100 calculated?</summary><p data-i18n="faq4a">The eight weights are 20, 15, 15, 10, 10, 8, 8, and 6, adding up to 92. A pass earns the full weight, a partial pass earns half, and a missing item earns zero. The total is divided by 92, multiplied by 100, and rounded to the nearest whole number. The score measures signals of structure, not truth, safety, or the quality of a future AI answer.</p></details>
+        <details><summary data-i18n="faq5q">Does it support Chinese and work with any AI tool?</summary><p data-i18n="faq5a">It checks English and Chinese prompts. The page starts in English; the switch changes interface text only. The optimizer estimates the input’s main language from the text and keeps original wording, including mixed-language terms. You can copy the result into any AI tool that accepts text prompts; PromptUplift has no integration with those services.</p></details>
+        <details><summary data-i18n="faq6q">Will one-click optimization invent missing details?</summary><p data-i18n="faq6a">No. It groups your existing wording and adds clearly marked placeholders such as [To fill: target audience]. It cannot understand every nuance, resolve contradictions, or replace vague wording with facts it does not know. Review the arrangement, move any misplaced text, and fill the placeholders before use.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><div><a class="brand" href="#">PromptUplift<span class="brand-dot" aria-hidden="true">.</span></a><p data-i18n="footer">A clearer starting point for your next idea.</p></div><p class="footer-local" data-i18n="footerLocal">Made for your browser. Your words stay yours.</p></footer>
+  <noscript><p class="noscript-note">Please enable JavaScript to use the tool. All processing stays in your browser. 请启用 JavaScript，所有处理都在浏览器本地完成。</p></noscript>
+</body>
+</html>
