@@ -1,0 +1,67 @@
+# PicUplift
+
+> [PicUplift](https://picuplift.com/) is a free suite of image tools that runs entirely in your browser. Convert HEIC to JPG or PNG, turn WebP into PNG, and compress JPG, PNG, and WebP. No signup, no uploads, and no conversion quotas. Images are processed locally on the user's device and are never uploaded.
+
+## Tools
+
+- [HEIC to JPG Converter](https://picuplift.com/heic-to-jpg.html): Convert HEIC and HEIF phone photos to JPG, entirely on your device. Default JPG quality is 90%. Batch conversion, adjustable quality, and ZIP downloads.
+- [HEIC to PNG Converter](https://picuplift.com/heic-to-png.html): Convert HEIC and HEIF images to PNG with lossless PNG encoding. Batch conversion and ZIP downloads.
+- [WebP to PNG Converter](https://picuplift.com/webp-to-png.html): Convert WebP images to PNG, keeping transparent backgrounds.
+- [Image Compressor](https://picuplift.com/compress-image.html): Compress JPG, PNG, and WebP images. Default quality is 80%. Compare real file sizes before downloading, or keep the original if the output grew.
+- [WebP to JPG Converter](https://picuplift.com/webp-to-jpg.html): Local batch conversion, quality 90 by default, white background for transparency, individual and ZIP downloads.
+
+- [Compress to 200KB](https://picuplift.com/compress-image-to-200kb.html): Compress images toward a 200KB target.
+- [Compress JPEG to 100KB](https://picuplift.com/compress-jpeg-to-100kb.html): Compress JPEG images toward a 100KB target.
+- [Compress Images for Instagram](https://picuplift.com/how-to-compress-images-for-instagram.html): Prepare images for Instagram.
+- [Convert HEIC to JPG on iPhone](https://picuplift.com/how-to-convert-heic-to-jpg-on-iphone.html): Convert photos using iPhone tools.
+- [WebP to PNG in Bulk](https://picuplift.com/webp-to-png-bulk.html): Convert multiple WebP files to PNG locally.
+- [AVIF to JPG](https://picuplift.com/avif-to-jpg.html): Convert AVIF to JPG locally.
+- [Image to Text](https://picuplift.com/image-to-text.html): Read printed English locally with OCR.
+- [PNG to JPG Converter](https://picuplift.com/png-to-jpg.html): Convert PNG images to JPG locally, quality 90 by default, white background for transparency.
+- [JPG to PNG Converter](https://picuplift.com/jpg-to-png.html): Convert JPG images to PNG with lossless PNG encoding. Batch conversion and ZIP downloads.
+- [PNG & JPG to WebP Converter](https://picuplift.com/to-webp.html): Convert PNG and JPG images to WebP locally, quality 90 by default, transparency kept. Batch conversion and ZIP downloads.
+
+- [PNG to ICO Converter](https://picuplift.com/png-to-ico.html): Convert PNG, JPG, and WebP images to ICO favicon files locally, multiple sizes 16–256px in one file, transparency kept. Batch conversion and ZIP downloads.
+- [SVG to ICO Converter](https://picuplift.com/svg-to-ico.html): Convert SVG logos to ICO favicon files locally, each size rasterized straight from the vector, multiple sizes 16–256px in one file, transparency kept. Batch conversion and ZIP downloads.
+
+- [GIF to JPG Converter](https://picuplift.com/gif-to-jpg.html): Convert GIF images to JPG locally, first frame only, transparency turns white. Batch conversion and ZIP downloads.
+- [GIF to PNG Converter](https://picuplift.com/gif-to-png.html): Convert GIF images to PNG locally, first frame only, transparency kept. Batch conversion and ZIP downloads.
+- [JPG to GIF Converter](https://picuplift.com/jpg-to-gif.html): Turn JPG photos into an animated GIF locally, up to 30 frames, adjustable frame delay. One GIF per batch.
+- [AVIF to PNG Converter](https://picuplift.com/avif-to-png.html): Convert AVIF images to PNG locally, transparency kept. Batch conversion and ZIP downloads.
+- [Image Splitter](https://picuplift.com/image-splitter.html): Split an image into equal parts or a grid locally, download PNG tiles one by one or as a ZIP. Batch splitting up to 20 images, free.
+- [Split Image into 4 Parts](https://picuplift.com/split-image-into-4-parts.html): Split an image into 4 equal parts locally, download four PNG tiles or one ZIP.
+- [Cut Image into 9 Squares](https://picuplift.com/cut-image-into-9-squares.html): Cut an image into 9 squares locally, a 3×3 grid for Instagram, download nine PNG tiles or one ZIP.
+- [Split Image into Equal Parts](https://picuplift.com/split-image-into-equal-parts.html): Split an image into 2 to 5 equal parts locally, download PNG tiles or one ZIP.
+- [PNG to GIF Converter](https://picuplift.com/png-to-gif.html): Turn PNG images into an animated GIF locally, up to 30 frames, adjustable frame delay. One GIF per batch.
+
+## Guides
+
+- [How to Convert HEIC to JPG on Windows 11](https://picuplift.com/how-to-convert-heic-to-jpg-on-windows-11.html): Three methods to convert HEIC to JPG on Windows 11, including PicUplift.
+- [How to Convert HEIC to JPG on Mac](https://picuplift.com/how-to-convert-heic-to-jpg-on-mac.html): Methods to convert HEIC to JPG on a Mac, including PicUplift.
+- [How to Convert HEIC to PNG](https://picuplift.com/how-to-convert-heic-to-png.html): Browser, Mac Preview and Windows Paint methods, with local-processing, codec and lossless-encoding limits explained.
+- [How to Convert WebP to JPG](https://picuplift.com/how-to-convert-webp-to-jpg.html): Browser, Mac Preview and Windows Paint methods with quality and transparency limits explained.
+
+- [How to Convert a GIF to JPG on iPhone](https://picuplift.com/how-to-convert-gif-to-jpg-on-iphone.html): Three methods to convert a GIF to JPG on iPhone, including PicUplift.
+- [How to Turn Multiple Photos into an Animated GIF](https://picuplift.com/how-to-turn-photos-into-animated-gif.html): Browser converter, iPhone Shortcuts, and GIMP methods for making an animated GIF from photos.
+
+## Privacy
+- [Privacy Policy](https://picuplift.com/privacy-policy.html): What PicUplift collects (Google Analytics for visits and interactions only), what the Chrome extension does not collect, and how to contact the publisher.
+
+- Images are processed locally in the browser tab and are never uploaded or saved by the site.
+- No signup and no account. PicUplift sets no artificial file-size or conversion-count caps; practical limits come from device memory, browser decoders, image dimensions, and ZIP format capacity.
+- The site uses Google Analytics to measure visits and interactions (such as page views, scrolling, and clicks). Images are always processed locally and are never uploaded.
+- Converted outputs are static images, except JPG to GIF and PNG to GIF, which make animated GIFs. An animated WebP, PNG, GIF, or AVIF uses its first frame, and a multi-image HEIC uses its primary image. Converted outputs do not copy camera metadata. Originals stay untouched.
+- PicUplift works offline after downloading the complete folder: open index.html in a current desktop Chrome or Edge, keeping the assets folder alongside the pages.
+
+## Pricing
+
+- All tools are free, with no registration, conversion quotas, or advertisements. There is no paid plan, trial, or subscription.
+
+## PDF tools
+
+- [Image to PDF](https://picuplift.com/convert-image-to-pdf.html): Merge JPG and PNG pictures into one PDF locally, one image per page.
+- [PDF to Images](https://picuplift.com/convert-pdf-to-image.html): Render PDF pages to JPG or PNG locally, with individual and ZIP downloads. Requires HTTP(S), including a local web server. No OCR or editable document conversion.
+- [Markdown to PDF](https://picuplift.com/convert-markdown-to-pdf.html): Convert Markdown to an image-based PDF locally using system fonts. PDF text is not selectable or searchable. No remote images are fetched.
+
+- [SVG to PNG Converter](https://picuplift.com/svg-to-png.html): Render SVG locally with size controls, transparent/white/custom backgrounds, batches and ZIP downloads.
+- [How to Convert SVG to PNG](https://picuplift.com/how-to-convert-svg-to-png.html): Browser conversion, Inkscape and design-app export, with transparency and size guidance.
